@@ -19,3 +19,136 @@
 </section>
 </body>
 </html>
+
+
+const caixaPrincipal = document.querySelector(“.caixa-principal”);
+const caixaPerguntas = document.querySelector(“.caixa-perguntas”);
+const caixaAlternativas = document.querySelector(“.caixa-alternativas”);
+const caixaResultado = document.querySelector(“.caixa-resultado”);
+const textoResultado = document.querySelector(“.texto-resultado”);
+alternativas: [
+{
+texto: “Isso é assustador!”,
+afirmacao: [
+“No início ficou com medo do que essa tecnologia pode fazer.”,
+“Achou assustador pensar na velocidade na qual a tecnologia está avançando.”
+],
+},
+{
+texto: “Isso é maravilhoso!”,
+afirmacao:
+“Quis saber como usar IA no seu dia a dia.”,
+“Pensou que IA pode ajudar em tarefas da sua vida.”
+],
+},
+]
+const caixaPerguntas = document(".caixa-perguntas");
+const perguntas =
+      {
+          enunciado "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+          alternativas: [
+          {
+              texto: "Isso é assustador!",
+             afirmacao: "No início ficou com medo do que essa tecnologia pode fazer.
+            }
+        ]
+    }
+]
+var unidades= [“Segurança da Informação”, “Game Designer”, “Ciência da Computação”];
+
+function respostaSelecionada(opcaoSelecionada) {
+    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
+historiaFinal += afirmacoes + “ “;
+atual++;
+mostraPergunta();
+}
+function dadoD6() {
+    var numero = Math.floor(Math.random() * 6) + 1;
+    return numero;
+}
+
+console.log(dadoD6());
+<script type=”module” src=”js/aleatorio.js”></script>
+<script type=”module” src=”js/perguntas.js”></script>
+<script type=”module” src=”js/script.js”></script>
+function mostraResultado() {
+caixaPerguntas.textContent = "Em 2049...";
+textoResultado.textContent = historiaFinal;
+caixaAlternativas.textContent = "";
+botaoJogarNovamente.addEventListener("click", jogaNovamente());
+
+}
+body {
+background-color: var(--cor-fundo);
+color: var(--cor-texto);
+font-family: 'Inter', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+function substituiNome(){
+for(const pergunta of perguntas){
+pergunta.enunciado = pergunta.enunciado.replace(/você/g, nome);
+    }
+}
+import { _________ } from './aleatorio.js'; 
+const bebidasBase = ["Café", "Chá", "Leite", "Suco de laranja"];
+
+function criaBebida() {
+  const bebida = aleatorio(___________);
+
+console.log(`Bom dia! Sua bebida para o café da manhã é: ${__________}.`);
+}
+
+criaBebida();
+const escola = "Alura Start";
+
+console.log(`Eu estudo na ${escola}`);
+function respostaSelecionada(opcaoSelecionada) {
+    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
+    historiaFinal += afirmacoes + " ";
+    ____ (opcaoSelecionada.proxima !== ____ ){
+        atual = opcaoSelecionada.proxima;
+    }  ____  {
+        mostraResultado();
+        _______;
+    }
+    mostraPergunta();
+}
+export const perguntas = [
+    {
+        enunciado: "Qual filme você deseja assistir?",
+        alternativas: [
+            {
+                filme: "Toy Story",
+                sala: [
+                    "Escolha o seu assento e direcione-se à Sala 5."
+                ],
+                ____: ___,
+            },
+            {
+                filme: _____
+                sala: [
+                    "Escolha o seu assento e direcione-se à Sala 4."
+                ],
+                ____: ___,
+            },
+    // + outras opções de filmes
+        ]
+    },
+    _______ ________() {
+    atual = ____
+    perguntaFinal = "";
+    telaInicial.style.display = _______
+    mostraPergunta();
+}
+<___ class= "________">
+<__> O futuro do planeta Terra <___>
+<__> O planeta em que vivemos está passando por mudanças climáticas que podem ser observadas em diferentes regiões do Brasil e do mundo.<___>
+</div>
+    function escolherSaborAleatorio() {
+  const sabores = ["morango", "chocolate", "baunilha", "caramelo", "cereja"];
+  const indiceAleatorio = Math.floor(Math.random() * sabores.length);
+  return sabores[indiceAleatorio];
+}
